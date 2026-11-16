@@ -15,3 +15,8 @@ geo = requests.get("https://geocoding-api.open-meteo.com/v1/search",[cite: 1]
             except Exception as e:
                 print(f"Error finding location: {e}")
                 return
+
+
+                if __name__ == "__main__":
+                    location = input("Enter a location to get the latitude and longitude: ")
+                    get_weather(location) 
