@@ -12,4 +12,5 @@ geo = requests.get("https://geocoding-api.open-meteo.com/v1/search",[cite: 1]
             print(f"Name: {place['name']}")
             print(f"Latitude: {place['latitude']}")
             print(f"Longitude: {place['longitude']}")
-            
+            except Exception as e:
+                
