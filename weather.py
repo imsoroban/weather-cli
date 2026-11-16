@@ -3,4 +3,6 @@ import requests
 def get_weather(location):
     try:
         #latitude and longitude
-        geo = requests.get 
+geo = requests.get("https://geocoding-api.open-meteo.com/v1/search",[cite: 1]
+                  params={"name": location, "count": 1}).json()[cite: 1]
+        
