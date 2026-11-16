@@ -9,4 +9,4 @@ geo = requests.get("https://geocoding-api.open-meteo.com/v1/search",[cite: 1]
             print("Location not found!")
             return
             place = geo["results"][0]
-            
+            print(f"Name: {place['name']}")
