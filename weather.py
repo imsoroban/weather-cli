@@ -13,10 +13,14 @@ def get_weather(location):
             return
             
         place = geo["results"][0]
-        print(f"Name: {place['name']}")
-        print(f"Latitude: {place['latitude']}")
-        print(f"Longitude: {place['longitude']}")
-        
+
+       # get the weather
+    weather = requests.get(https://api.open-meteo.com/v1/forecast",
+                           params={
+                               "latitude": place["latitude"],
+                               "longitude": place["longitude"],
+                               "current" : "temperature
+                           })
     except Exception as e:
         print(f"Error finding location: {e}")
         return
