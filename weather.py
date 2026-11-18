@@ -58,5 +58,5 @@ def get_weather(location):
         return
 
 if __name__ == "__main__":
-    location = input("Enter a location to get the latitude and longitude: ")
+    location = input("Enter a location to get the weather and temperature:")
     get_weather(location)
