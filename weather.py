@@ -32,7 +32,8 @@ def get_weather(location):
 
                            condition = weather_conditions.get(code, "Unknown")
                            print(f"Location: {place['name']}")
-                           print(f"Location: {place['name']}")
+                           print(f"Temperature: {temperature}°C")
+                           print(f"Weather Condition: {condition}")
     except Exception as e:
         print(f"Error finding location: {e}")
         return
