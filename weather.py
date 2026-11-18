@@ -26,6 +26,11 @@ def get_weather(location):
                            temperature = weather["current"][temperature_2m]
                            code = weather["current"]["weather_code"] 
                            # weather code into condition
+                           weather_conditions = {
+
+                           }
+
+                           
     except Exception as e:
         print(f"Error finding location: {e}")
         return
