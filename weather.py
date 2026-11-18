@@ -19,8 +19,11 @@ def get_weather(location):
                            params={
                                "latitude": place["latitude"],
                                "longitude": place["longitude"],
-                               "current" : "temperature
-                           })
+                               "current" : "temperature_2m,weather_code"
+                               "timezone": "auto"
+
+                           }).json()
+                           
     except Exception as e:
         print(f"Error finding location: {e}")
         return
