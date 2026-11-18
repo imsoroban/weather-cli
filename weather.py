@@ -24,7 +24,8 @@ def get_weather(location):
 
                            }).json()
                            temperature = weather["current"][temperature_2m]
-                           code = weather 
+                           code = weather["current"]["weather_code"] 
+                           # weather code into condition
     except Exception as e:
         print(f"Error finding location: {e}")
         return
