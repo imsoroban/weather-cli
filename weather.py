@@ -23,7 +23,8 @@ def get_weather(location):
                                "timezone": "auto"
 
                            }).json()
-                           
+                           temperature = weather["current"][temperature_2m]
+                           code = weather 
     except Exception as e:
         print(f"Error finding location: {e}")
         return
